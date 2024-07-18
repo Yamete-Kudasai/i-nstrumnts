@@ -16,7 +16,7 @@
 
     
 
-<body class="font-montserrat">
+
     <!--
     NAVBAR -> SARA
     HOME PRINCIPAL -> JENNY
@@ -25,37 +25,29 @@
     CONTACT -> ENMANUEL
     FOOTER -> SARA
     -->
-    <header class="w-full flex bg-white justify-center  ">
-        <nav class="relative flex w-4/5 py-2" >
-            <div class="container mx-auto flex">
-                <div class="logo flex flex-grow left-0 mt-3 items-center">
-                    <img src="public/assets/img/logo i-nstrumnts.png" class="w-20 h-10 justify-end" >
-                </div>
-                <div class="flex  lg:hidden ">
-                    <img src="public/assets/img/menuHamburguesa.jpg.svg" onclick="openMenu();" class="w-8 h-8 mt-3 justify-end">
-                </div>
-                <div id="menu"class="lg:flex hidden flex-grow absolute lg:relative lg:top-0 top-20 left-0 w-full lg:w-auto 
-                items-center py-14 lg:py-0 px-8 sm:px-24 lg:px-0  bg-white opacity-75 justify-end ">
+<header class="w-full flex bg-white justify-center fixed ">
+    <nav class="relative flex w-4/5 py-2 " >
+        <div class="container mx-auto flex">
+            <div class="logo flex flex-grow left-0 mt-3 items-center">
+                <img src="public/assets/img/logo i-nstrumnts.png" class="w-20 h-10 justify-end" >
+            </div>
+        <div class="flex  lg:hidden ">
+                <img src="public/assets/img/menuHamburguesa.jpg.svg" onclick="openMenu();" class="w-8 h-8 mt-3 justify-end">
+        </div>
+        <div id="menu"class="lg:flex hidden flex-grow absolute lg:relative lg:top-0 top-20 left-0 w-full lg:w-auto 
+                items-center py-14 lg:py-0 px-8 sm:px-24 lg:px-0  bg-white opacity-75 justify-end transition duration-300">
 
                 <div class="flex flex-col lg:flex-row text-end lg:mb-0 mb-8 mt-4">
-                    <a href="" class="hover:text-orange-500 text-sm font-medium mb-8 lg:mb-0  lg:mr-7  ">HOME</a>
-                    <a href="" class="hover:text-orange-500  text-sm font-medium mb-8 lg:mb-0  lg:mr-7 ">INSTRUMENTOS</a>
-                    <a href="" class=" hover:text-orange-500  text-sm font-medium mb-8 lg:mb-0  lg:mr-7 ">SOBRE NOSOTROS</a>
-                    <a href="" class="hover:text-orange-500  text-sm font-medium   ">CONTACTO</a>
+                    <a href="" class="hover:text-orange-500 text-medium font-semibold mb-8 lg:mb-0  lg:mr-7  ">Home</a>
+                    <a href="" class="hover:text-orange-500  text-medium font-semibold mb-8 lg:mb-0  lg:mr-7 ">Instrumentos</a>
+                    <a href="" class=" hover:text-orange-500  text-medium font-semibold mb-8 lg:mb-0  lg:mr-7 ">Sobre nosotros</a>
+                    <a href="" class="hover:text-orange-500  text-medium font-semibold   ">Contacto</a>
                 </div>
-                </div> 
-            </div>
+            </div> 
+        </div>
         </nav>
 
-
-        
-
-
-
-
-
-
-    </header>
+</header>
 
 
 
@@ -126,9 +118,20 @@
             </div>
 
     </section>
-    <footer>
 
+
+    <footer class="bg-gray-900 text-white py-4 mt-auto relative  ">
+        <div class="h-full flex justify-center mx-auto p-6" >
+            <img src="public/assets/img/logo i-nstrumnts-mono.png" class="w-24 h-12 " >
+        </div>
+        <div class="container mx-auto text-center">
+            <p class="text-sm ">
+                ©Copyright 2024 | All Rights Reserved | i-nstrumnts
+            </p>
+        </div>
     </footer>
+    
+
 
     <script>
          function openMenu() {
