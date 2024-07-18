@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>I_nstrumnts</title>
 </head>
-<body class="bg-gray-100 ">
+
+<body class="font-montserrat">
     <!--
     NAVBAR -> SARA
     HOME PRINCIPAL -> JENNY
@@ -16,55 +18,80 @@
     FOOTER -> SARA
     -->
     <header></header>
-    <section class="home flex-col w-full">
+    <section class="home flex-col w-full justify-center items-center">
         <div class="bg-[url('public/assets/img/banner-home.jpg')] flex w-full h-screen bg-cover bg-center ">
-        </div>     
-        <div class="flex-col justify-end item-center bg-blue-950 left-0 w-3/4 pt-6 mt-20">
-            <h2 class="text-2xl -mb-1 text-white font-montserrat text-end mt-6">QUÉ SOMOS</h2>
         </div>
-            <p class="text-lg mb-2 font-montserrat"> En nuestra plataforma, llevamos la magia de la música a tus manos. Aquí, puedes explorar una amplia 
-                variedad de instrumentos virtuales y sumergirte en el aprendizaje musical desde la comodidad de tu hogar. Ya seas un principiante curioso o un músico experimentado, ofrecemos recursos interactivos y lecciones personalizadas para todos los niveles. Descubre tu pasión, afina tus habilidades y deja que la música transforme tu vida. 
-                ¡Únete a nosotros y comienza a tocar hoy mismo!</p>
-        
-        
 
-    </section>
-    <section class="instrumets ">
-        <!--STAR DIV BATTERY / GUITAR / PIANO / SAXOFONE-->
-        <div class="text-red-500">
-            <h1>INSTRUMENTOS</h1>
-        </div>
-        <div class="grid grid-cols-4  flex justify-center">
-             <a href="" class="flex relative">  
-        <div class="bg-[#998B96] h-40 w-40  absolute grid-cols-4 item-center " >
-        </div>          
-                 <img src="public/assets/img/drums.png" alt="battery"class="px-8 m-8 w-80 hover:w-96 ease-in duration-300 absolute">  
-             </a>
-             <a href="" class="flex relative">
-                <div class="bg-[#353A54] h-40 w-40  absolute grid-cols-4 item-center " >
-                </div> 
-                 <img src="public/assets/img/guitar.png" alt="guitar" class="px-8 m-8 w-80 hover:w-96 ease-in duration-300 absolute">
-             </a>
-             <a href="" class="flex relative">
-                <div class="bg-[#C0ABA5] h-40 w-40  absolute grid-cols-4 item-center " >
-                </div> 
-                <img src="public/assets/img/piano.png" alt="piano" class="px-8 m-8 w-80 hover:w-96 ease-in duration-300 absolute">
-             </a>
-             <a href="" class="flex relative">
-                <div class="bg-[#D37128] h-40 w-40  absolute grid-cols-4 item-center " >
+        <div class="flex items-center flex-col justify-center w-full">
+            <div class=" flex-col justify-center items-center w-4/5 mt-32 border-b-4 border-[#22213B]">
+                <div class="bg-[#22213B] flex-col pt-1 text-end relative w-1/2 py-16">
+                    <h2 class="absolute top-1 right-2 text-5xl mb-2 text-white font-montserrat mt-6  items-end  ">QUÉ
+                        SOMOS
+                    </h2>
                 </div>
-                <img src="public/assets/img/saxophone.png" alt="saxofone" class="px-8 m-8 w-80 hover:w-96 ease-in duration-300 absolute">
-             </a>
+
+            </div>
+
+            <div class=" flex-col justify-center w-4/5 mt-8">
+                <p class="text-3xl mt-4 mb-2"> En nuestra plataforma, llevamos la magia de la música a tus manos. Aquí,
+                    puedes explorar una amplia
+                    variedad de instrumentos virtuales y sumergirte en el aprendizaje musical desde la comodidad de tu
+                    hogar. Ya seas un principiante curioso o un músico experimentado, ofrecemos recursos interactivos y
+                    lecciones personalizadas para todos los niveles. Descubre tu pasión, afina tus habilidades y deja
+                    que la
+                    música transforme tu vida.
+                    ¡Únete a nosotros y comienza a tocar hoy mismo!</p>
+            </div>
         </div>
-        <!--FINISH DIV BATTERY / GUITAR / PIANO / SAXOFONE-->
-    </section>
-    <section class="aboutUs">
 
     </section>
-    <footer>
-        
-    </footer>
+    <section class="instrumets flex-col w-full justify-center items-center">
+        <!--STAR DIV BATTERY / GUITAR / PIANO / SAXOFONE-->
 
-    <script src="src/js/app.js"></script>
+        <div class="flex items-center flex-col justify-center w-full">
+            <div class=" flex-col justify-center items-center w-4/5 mt-32 border-b-4 border-[#22213B] mb-32">
+                <div class="bg-[#22213B] flex-col pt-1 text-end relative w-1/2 py-16">
+                    <h2 class="absolute top-1 right-2 text-5xl mb-2 text-white font-montserrat mt-6  items-end  ">INSTRUMENTOS
+                    </h2>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-4  flex justify-center w-4/5  mt-32">
+                <a href="" class="flex relative justify-center  items-center">
+                    <div class="bg-[#998B96] h-72 w-60  absolute  items-center ">
+                    </div>
+                    <img src="public/assets/img/drums.png" alt="battery"
+                        class=" ease-in-out duration-700  w-80 hover:w-96   absolute">
+                </a>
+                <a href="" class="flex relative justify-center  items-center">
+                    <div class="bg-[#353A54] h-72 w-60  absolute  items-center ">
+                    </div>
+                    <img src="public/assets/img/guitar.png" alt="guitar"
+                        class=" ease-in-out duration-700  w-80 hover:w-96   absolute">
+                </a>
+                <a href="" class="flex relative justify-center  items-center">
+                    <div class="bg-[#C0ABA5] h-72 w-60  absolute  items-center ">
+                    </div>
+                    <img src="public/assets/img/piano.png" alt="piano"
+                        class=" ease-in-out duration-700  w-80 hover:w-96   absolute">
+                </a>
+                <a href="" class="flex relative justify-center  items-center">
+                    <div class="bg-[#D37128] h-72 w-60  absolute  items-center ">
+                    </div>
+                    <img src="public/assets/img/saxophone.png" alt="saxofone"
+                        class=" ease-in-out duration-700  w-80 hover:w-96   absolute">
+                </a>
+            </div>
+            <!--FINISH DIV BATTERY / GUITAR / PIANO / SAXOFONE-->
+
+            <section class="aboutUs">
+
+            </section>
+            <footer>
+
+            </footer>
+
+            <script src="src/js/app.js"></script>
 </body>
+
 </html>
