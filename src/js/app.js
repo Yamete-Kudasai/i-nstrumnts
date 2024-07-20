@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         var drum = document.querySelector(`.drum-part[data-key="${key}"]`);
         if (drum) {
             const sound = drum.getAttribute('data-sound');
+
             playSound(sound);
 
             
@@ -49,13 +50,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let keypressed = new Set();
             document.addEventListener('keydown',(e) =>{
-                let  keypress = e.key
+                let  keypress = e.key.toLowerCase();
                 keypressed.add(keypress)
+
+                if (keypress == ' ') {
+                    e.preventDefault();
+                }
+
+                let colorBorder = document.querySelector('.drum-part')
+
+                if(colorBorder)
+
                 opacityDrum()
             });
 
             document.addEventListener('keyup',(e) =>{
-                let  keypressRelay = e.key
+                let  keypressRelay = e.key.toLowerCase();
                 keypressed.delete(keypressRelay)
                 opacityDrum()
             });
@@ -70,12 +80,12 @@ document.addEventListener('DOMContentLoaded', () => {
         
                     let key = part.getAttribute('data-key')
                     if (keypressed.has(key)) {
-                        part.classList.remove('opacity-1');
-                        part.classList.add('opacity-75');
-                    } else {
-                        part.classList.remove('opacity-75');
-                        part.classList.add('opacity-1');
-                    }
+                            part.classList.remove('opacity-1');
+                            part.classList.add('opacity-10');
+                        } else {
+                            part.classList.remove('opacity-10');
+                            part.classList.add('opacity-1');
+                        }
                 });
             }
 
