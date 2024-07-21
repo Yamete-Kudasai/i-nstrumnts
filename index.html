@@ -1,18 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>I_nstrumnts</title>
-</head>   
-<body class="font-montserrat">
+  </head>
+  <body class="font-montserrat">
     <!--
     NAVBAR -> SARA
     HOME PRINCIPAL -> JENNY
@@ -21,109 +23,136 @@
     CONTACT -> ENMANUEL
     FOOTER -> SARA
     -->
-    <header class="w-full flex bg-white justify-center  ">
-        <nav class="relative flex w-4/5 py-2" >
-            <div class="container mx-auto flex">
-                <div class="logo flex flex-grow left-0 mt-3 items-center">
-                    <img src="public/assets/img/logo i-nstrumnts.png" class="w-20 h-10 justify-end" >
-                </div>
-                <div class="flex  lg:hidden ">
-                    <img src="public/assets/img/menuHamburguesa.jpg.svg" onclick="openMenu();" class="w-8 h-8 mt-3 justify-end">
-                </div>
-                <div id="menu"class="lg:flex hidden flex-grow absolute lg:relative lg:top-0 top-20 left-0 w-full lg:w-auto 
-                items-center py-14 lg:py-0 px-8 sm:px-24 lg:px-0  bg-white opacity-75 justify-end ">
-
-                <div class="flex flex-col lg:flex-row text-end lg:mb-0 mb-8 mt-4">
-                    <a href="" class="hover:text-orange-500 text-sm font-medium mb-8 lg:mb-0  lg:mr-7  ">HOME</a>
-                    <a href="" class="hover:text-orange-500  text-sm font-medium mb-8 lg:mb-0  lg:mr-7 ">INSTRUMENTOS</a>
-                    <a href="" class=" hover:text-orange-500  text-sm font-medium mb-8 lg:mb-0  lg:mr-7 ">SOBRE NOSOTROS</a>
-                    <a href="" class="hover:text-orange-500  text-sm font-medium   ">CONTACTO</a>
-                </div>
-                </div> 
+    <header class="w-full flex bg-white justify-center">
+      <nav class="relative flex w-4/5 py-2">
+        <div class="container mx-auto flex">
+          <div class="logo flex flex-grow left-0 mt-3 items-center">
+            <img
+              src="public/assets/img/logo i-nstrumnts.png"
+              class="w-20 h-10 justify-end"
+            />
+          </div>
+          <div class="flex lg:hidden">
+            <img
+              src="public/assets/img/menuHamburguesa.jpg.svg"
+              onclick="openMenu();"
+              class="w-8 h-8 mt-3 justify-end"
+            />
+          </div>
+          <div
+            id="menu"
+            class="lg:flex hidden flex-grow lg:absolute lg:relative lg:top-0 top-20 left-0 w-full lg:w-auto items-center py-14 lg:py-0 px-8 sm:px-24 lg:px-0 bg-white opacity-75 justify-end"
+          >
+            <div class="flex flex-col lg:flex-row text-end lg:mb-0 mb-8 mt-4">
+              <a
+                href=""
+                class="hover:text-orange-500 text-sm font-medium mb-8 lg:mb-0 lg:mr-7"
+                >HOME</a
+              >
+              <a
+                href=""
+                class="hover:text-orange-500 text-sm font-medium mb-8 lg:mb-0 lg:mr-7"
+                >INSTRUMENTOS</a
+              >
+              <a
+                href=""
+                class="hover:text-orange-500 text-sm font-medium mb-8 lg:mb-0 lg:mr-7"
+                >SOBRE NOSOTROS</a
+              >
+              <a href="" class="hover:text-orange-500 text-sm font-medium"
+                >CONTACTO</a
+              >
             </div>
-        </nav>
-
-
-        
-
-
-
-
-
-
+          </div>
+        </div>
+      </nav>
     </header>
 
-
-
-
-
     <section class="home flex-col w-full justify-center items-center">
-        <div class="bg-[url('public/assets/img/banner-home.jpg')] flex w-full h-screen bg-cover bg-center ">
+      <div
+        class="bg-[url('public/assets/img/banner-home.jpg')] flex w-full h-screen bg-cover bg-center"
+      ></div>
+
+      <div class="flex items-center flex-col justify-center w-full">
+        <div
+          class="flex-col justify-center items-center w-4/5 mt-32 border-b-4 border-[#22213B]"
+        >
+          <div class="bg-[#22213B] flex-col pt-1 text-end relative w-1/2 py-16">
+            <h2
+              class="lg:absolute top-1 right-2 text-5xl mb-2 text-white font-montserrat mt-6 items-end"
+            >
+              QUÉ SOMOS
+            </h2>
+          </div>
         </div>
 
-        <div class="flex items-center flex-col justify-center w-full">
-        <div class=" flex-col justify-center items-center w-4/5 mt-32 border-b-4 border-[#22213B]">
-            <div class="bg-[#22213B] flex-col pt-1 text-end relative w-1/2 py-16">
-                <h2 class="absolute top-1 right-2 text-5xl mb-2 text-white font-montserrat mt-6  items-end  ">QUÉ SOMOS
-                </h2>
-            </div>
-
+        <div class="flex-col justify-center w-4/5 mt-8">
+          <p class="text-3xl mt-4 mb-2">
+            En nuestra plataforma, llevamos la magia de la música a tus manos.
+            Aquí, puedes explorar una amplia variedad de instrumentos virtuales
+            y sumergirte en el aprendizaje musical desde la comodidad de tu
+            hogar. Ya seas un principiante curioso o un músico experimentado,
+            ofrecemos recursos interactivos y lecciones personalizadas para
+            todos los niveles. Descubre tu pasión, afina tus habilidades y deja
+            que la música transforme tu vida. ¡Únete a nosotros y comienza a
+            tocar hoy mismo!
+          </p>
         </div>
-
-        <div class=" flex-col justify-center w-4/5 mt-8">
-            <p class="text-3xl mt-4 mb-2"> En nuestra plataforma, llevamos la magia de la música a tus manos. Aquí,
-                puedes explorar una amplia
-                variedad de instrumentos virtuales y sumergirte en el aprendizaje musical desde la comodidad de tu
-                hogar. Ya seas un principiante curioso o un músico experimentado, ofrecemos recursos interactivos y
-                lecciones personalizadas para todos los niveles. Descubre tu pasión, afina tus habilidades y deja que la
-                música transforme tu vida.
-                ¡Únete a nosotros y comienza a tocar hoy mismo!</p>
-        </div>
-        </div>
-
+      </div>
     </section>
 
-    <section class="instrumets">
-
-        <div class="flex items-center flex-col justify-center w-full">
-            <div class=" flex-col justify-center items-center w-4/5 mt-32 border-b-4 border-[#22213B] mb-32">
-                <div class="bg-[#22213B] flex-col pt-1 text-end relative w-1/2 py-16">
-                    <h2 class="absolute top-1 right-2 text-5xl mb-2 text-white font-montserrat mt-6  items-end  ">INSTRUMENTOS
-                    </h2>
-                </div>
-            </div>
-            <div class="grid grid-cols-4  flex justify-center w-4/5  mt-32">
-                <a href="" class="flex relative justify-center  items-center">
-                    <div class="bg-[#998B96] h-72 w-60  absolute  items-center ">
-                    </div>
-                    <img src="public/assets/img/drums.png" alt="battery"
-                        class=" ease-in-out duration-700  w-80 hover:w-96   absolute">
-                </a>
-                <a href="" class="flex relative justify-center  items-center">
-                    <div class="bg-[#353A54] h-72 w-60  absolute  items-center ">
-                    </div>
-                    <img src="public/assets/img/guitar.png" alt="guitar"
-                        class=" ease-in-out duration-700  w-80 hover:w-96   absolute">
-                </a>
-                <a href="" class="flex relative justify-center  items-center">
-                    <div class="bg-[#C0ABA5] h-72 w-60  absolute  items-center ">
-                    </div>
-                    <img src="public/assets/img/piano.png" alt="piano"
-                        class=" ease-in-out duration-700  w-80 hover:w-96   absolute">
-                </a>
-                <a href="" class="flex relative justify-center  items-center">
-                    <div class="bg-[#D37128] h-72 w-60  absolute  items-center ">
-                    </div>
-                    <img src="public/assets/img/saxophone.png" alt="saxofone"
-                        class=" ease-in-out duration-700  w-80 hover:w-96   absolute">
-                </a>
-            </div>
-
+    <section class="instrumets flex-col">
+      <div class="flex items-center flex-col justify-center w-full">
+        <div
+          class="flex-col justify-center items-center lg:w-4/5 w-full  lg:border-b-4 lg:border-[#22213B] sm:mb-32 "
+        >
+          <div class="bg-[#22213B] flex-col pt-1 text-end relative lg:w-1/2 w-3/4 lg:py-16 py-12">
+            <h2
+              class="absolute lg:top-1 right-2 lg:text-5xl -bottom-3.5 text-3xl mb-2 text-white font-montserrat mt-6 items-end"
+            >
+              INSTRUMENTOS
+            </h2>
+          </div>
+        </div>
+        <div
+          class="grid lg:grid-cols-4 grid-cols-2  lg:w-4/5 w-full lg:mt-32 mt-0 gap-6"
+        >
+          <a href="" class="flex relative justify-center items-center mt-10">
+            <div class="bg-[#998B96] max-lg:hidden h-72 w-60 lg:absolute items-center"></div>
+            <img
+              src="public/assets/img/drums.png"
+              alt="battery"
+              class="max-lg:bg-[#998B96] ease-in-out duration-700 lg:w-80 lg:hover:w-96 w-40 hover:w-44 lg:absolute p-2"
+            />
+          </a>
+          <a href="" class="flex relative justify-center items-center mt-10">
+            <div class="bg-[#353A54] max-lg:hidden h-72 w-60 lg:absolute items-center"></div>
+            <img
+              src="public/assets/img/guitar.png"
+              alt="guitar"
+              class="max-lg:bg-[#353A54] ease-in-out duration-700 lg:w-80 lg:hover:w-96 w-40 hover:w-44 lg:absolute p-2"
+            />
+          </a>
+          <a href="" class="flex relative justify-center items-center mt-10">
+            <div class="bg-[#C0ABA5] max-lg:hidden h-72 w-60 lg:absolute items-center"></div>
+            <img
+              src="public/assets/img/piano.png"
+              alt="piano"
+              class="max-lg:bg-[#C0ABA5] ease-in-out duration-700 lg:w-80 lg:hover:w-96 w-40 hover:w-44 lg:absolute p-2"
+            />
+          </a>
+          <a href="" class="flex relative justify-center items-center mt-10">
+            <div class="bg-[#D37128] max-lg:hidden h-72 w-60 lg:absolute items-center"></div>
+            <img
+              src="public/assets/img/saxophone.png"
+              alt="saxofone"
+              class="max-lg:bg-[#D37128] ease-in-out duration-700 lg:w-80 lg:hover:w-96 w-40 hover:w-44 lg:absolute p-2"
+            />
+          </a>
+        </div>
+      </div>
     </section>
-    <footer>
-
-    </footer>
+    <footer class="mt-44"></footer>
     <script src="src/js/app.js"></script>
-</body>
+  </body>
 </html>
-
