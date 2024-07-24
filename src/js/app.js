@@ -1,4 +1,21 @@
+//LOADER
+function deleteLoader(){
 
+    let loader = document.getElementById('loader')
+
+    if(loader){
+        setTimeout(() =>{
+            loader.classList.add('hidden')
+            console.log("se elimino el loader")
+        },2000);
+    }else{
+        console.log("no existe el loader")
+    }
+}
+
+
+deleteLoader()
+//FIN LOADER
 
 // INICIO NAVBAR
 function openMenu() {
@@ -53,10 +70,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 let  keypress = e.key.toLowerCase();
                 keypressed.add(keypress)
 
-                if (keypress == ' ') {
-                    e.preventDefault();
-                }
-
+                e.preventDefault();
+                
                 let colorBorder = document.querySelector('.drum-part')
 
                 if(colorBorder)
@@ -88,13 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
                 });
             }
-
-
-
-    const volumeController = document.getElementById("volumecontroller")
-    volumeController.addEventListener("input", () => {
-        HTMLMediaElement.volume=volumeController.value/100
-    })
 });
 
 //FIN INSTRUMENTO
