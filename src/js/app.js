@@ -34,7 +34,6 @@ function deleteLoader(){
     }
 }
 
-
 deleteLoader()
 //END LOADER
 
