@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Este es el contenido para cada página
     const images = {
-        '1': '../public/assets/img/saxophone-with-background.png',
-        '2': '../public/assets/img/guitar-with-background.png',
-        '3': '../public/assets/img/piano-with-background.png'
+        '1': '../public/assets/img/saxophone-with-background.svg',
+        '2': '../public/assets/img/guitar-with-background.svg',
+        '3': '../public/assets/img/piano-with-background.svg'
     };
 
     // Aquí cambia la imagen de la página según el instrumento escogido

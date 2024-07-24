@@ -7,14 +7,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>I_nstrumnts</title>
 </head>
+
 <body class="font-montserrat">
 
-    
+
 
 
     <!--
@@ -25,29 +27,39 @@
     CONTACT -> ENMANUEL
     FOOTER -> SARA
     -->
-<header class="w-full flex bg-white justify-center fixed ">
-    <nav class="relative flex w-4/5 py-2 " >
-        <div class="container mx-auto flex">
-            <div class="logo flex flex-grow left-0 mt-3 items-center">
-                <img src="public/assets/img/logo i-nstrumnts.png" class="w-20 h-10 justify-end" >
-            </div>
-        <div class="flex  lg:hidden ">
-                <img src="public/assets/img/menuHamburguesa.jpg.svg" onclick="openMenu();" class="w-8 h-8 mt-3 justify-end">
-        </div>
-        <div id="menu"class="lg:flex hidden flex-grow absolute lg:relative lg:top-0 top-20 left-0 w-full lg:w-auto 
+    <header class="w-full flex bg-white justify-center fixed z-50 ">
+        <nav class="relative flex w-4/5 py-2 ">
+            <div class="container mx-auto flex">
+                <div class="logo flex flex-grow left-0 mt-3 items-center">
+                    <a href="./index.html">
+                    <img src="public/assets/img/logo i-nstrumnts.png" class="w-20 h-10 justify-end">
+                    </a>
+                </div>
+                <div class="flex  lg:hidden ">
+                    
+                        <img src="public/assets/img/menuHamburguesa.jpg.svg" onclick="openMenu();"
+                            class="w-8 h-8 mt-3 justify-end">
+                    
+                </div>
+                <div id="menu"
+                    class="lg:flex hidden flex-grow absolute lg:relative lg:top-0 top-20 left-0 w-full lg:w-auto 
                 items-center py-14 lg:py-0 px-8 sm:px-24 lg:px-0  bg-white opacity-75 justify-end transition duration-300">
 
-                <div class="flex flex-col lg:flex-row text-end lg:mb-0 mb-8 mt-4">
-                    <a href="" class="hover:text-orange-500 text-medium font-semibold mb-8 lg:mb-0  lg:mr-7  ">Home</a>
-                    <a href="" class="hover:text-orange-500  text-medium font-semibold mb-8 lg:mb-0  lg:mr-7 ">Instrumentos</a>
-                    <a href="" class=" hover:text-orange-500  text-medium font-semibold mb-8 lg:mb-0  lg:mr-7 ">Sobre nosotros</a>
-                    <a href="" class="hover:text-orange-500  text-medium font-semibold   ">Contacto</a>
+                    <div class="flex flex-col lg:flex-row text-start lg:mb-0 mb-8 mt-4">
+                        <a href=""
+                            class="hover:text-orange-500 text-medium font-semibold mb-8 lg:mb-0  lg:mr-7  ">Home</a>
+                        <a href=""
+                            class="hover:text-orange-500  text-medium font-semibold mb-8 lg:mb-0  lg:mr-7 ">Instrumentos</a>
+                        <a href=""
+                            class=" hover:text-orange-500  text-medium font-semibold mb-8 lg:mb-0  lg:mr-7 ">Sobre
+                            nosotros</a>
+                        <a href="" class="hover:text-orange-500  text-medium font-semibold   ">Contacto</a>
+                    </div>
                 </div>
-            </div> 
-        </div>
+            </div>
         </nav>
 
-</header>
+    </header>
 
 
 
@@ -58,23 +70,25 @@
         </div>
 
         <div class="flex items-center flex-col justify-center w-full">
-        <div class=" flex-col justify-center items-center w-4/5 mt-32 border-b-4 border-[#22213B]">
-            <div class="bg-[#22213B] flex-col pt-1 text-end relative w-1/2 py-16">
-                <h2 class="absolute top-1 right-2 text-5xl mb-2 text-white font-montserrat mt-6  items-end  ">QUÉ SOMOS
-                </h2>
+            <div class=" flex-col justify-center items-center w-4/5 mt-32 border-b-4 border-[#22213B]">
+                <div class="bg-[#22213B] flex-col pt-1 text-end relative w-1/2 py-16">
+                    <h2 class="absolute top-1 right-2 text-5xl mb-2 text-white font-montserrat mt-6  items-end  ">QUÉ
+                        SOMOS
+                    </h2>
+                </div>
+
             </div>
 
-        </div>
-
-        <div class=" flex-col justify-center w-4/5 mt-8">
-            <p class="text-3xl mt-4 mb-2"> En nuestra plataforma, llevamos la magia de la música a tus manos. Aquí,
-                puedes explorar una amplia
-                variedad de instrumentos virtuales y sumergirte en el aprendizaje musical desde la comodidad de tu
-                hogar. Ya seas un principiante curioso o un músico experimentado, ofrecemos recursos interactivos y
-                lecciones personalizadas para todos los niveles. Descubre tu pasión, afina tus habilidades y deja que la
-                música transforme tu vida.
-                ¡Únete a nosotros y comienza a tocar hoy mismo!</p>
-        </div>
+            <div class=" flex-col justify-center w-4/5 mt-8">
+                <p class="text-3xl mt-4 mb-2"> En nuestra plataforma, llevamos la magia de la música a tus manos. Aquí,
+                    puedes explorar una amplia
+                    variedad de instrumentos virtuales y sumergirte en el aprendizaje musical desde la comodidad de tu
+                    hogar. Ya seas un principiante curioso o un músico experimentado, ofrecemos recursos interactivos y
+                    lecciones personalizadas para todos los niveles. Descubre tu pasión, afina tus habilidades y deja
+                    que la
+                    música transforme tu vida.
+                    ¡Únete a nosotros y comienza a tocar hoy mismo!</p>
+            </div>
         </div>
 
     </section>
@@ -84,7 +98,8 @@
         <div class="flex items-center flex-col justify-center w-full">
             <div class=" flex-col justify-center items-center w-4/5 mt-32 border-b-4 border-[#22213B] mb-32">
                 <div class="bg-[#22213B] flex-col pt-1 text-end relative w-1/2 py-16">
-                    <h2 class="absolute top-1 right-2 text-5xl mb-2 text-white font-montserrat mt-6  items-end  ">INSTRUMENTOS
+                    <h2 class="absolute top-1 right-2 text-5xl mb-2 text-white font-montserrat mt-6  items-end  ">
+                        INSTRUMENTOS
                     </h2>
                 </div>
             </div>
@@ -119,8 +134,8 @@
 
 
     <footer class="bg-gray-900 text-white py-4 mt-auto relative  ">
-        <div class="h-full flex justify-center mx-auto p-6" >
-            <img src="public/assets/img/logo i-nstrumnts-mono.png" class="w-24 h-12 " >
+        <div class="h-full flex justify-center mx-auto p-6">
+            <img src="public/assets/img/logo i-nstrumnts-mono.png" class="w-24 h-12 ">
         </div>
         <div class="container mx-auto text-center">
             <p class="text-sm ">
@@ -130,13 +145,13 @@
     </footer>
 
     <script>
-         function openMenu() {
+        function openMenu() {
             let menu = document.getElementById('menu');
-            
-            if(menu.classList.contains('hidden')) {
-            menu.classList.remove('hidden');
-            } 
-            else{
+
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            }
+            else {
                 menu.classList.add('hidden');
             }
         }
@@ -144,5 +159,5 @@
 
     <script src="src/js/app.js"></script>
 </body>
-</html>
 
+</html>
