@@ -4,24 +4,73 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="src/css/style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="src/css/style.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
 
 <body>
-    <!-- ANA -->
-    <header></header>
-    <div class="flex flex-col items-center">
-        <div class="pb-20">
-            <img src="../public/assets/img/proximamente.png" alt="Proximamente" />
+    </head>
+
+    <body>
+     
+        <header class="w-full flex bg-white justify-center fixed z-50">
+            <nav class="relative flex w-4/5 py-2 ">
+                <div class="container mx-auto flex">
+                    <div class="logo flex flex-grow left-0 mt-3 items-center">
+                        <img src="../public/assets/img/logo i-nstrumnts.png" class="w-20 h-10 justify-end">
+                    </div>
+                    <div class="flex  lg:hidden ">
+                        <img src="../public/assets/img/menuHamburguesa.jpg.svg" onclick="openMenu();"
+                            class="w-8 h-8 mt-3 justify-end">
+                    </div>
+                    <div id="menu"
+                        class="lg:flex hidden flex-grow absolute lg:relative lg:top-0 top-20 left-0 w-full lg:w-auto 
+                  items-center py-14 lg:py-0 px-8 sm:px-24 lg:px-0  bg-white opacity-75 justify-end transition duration-300">
+
+                        <div class="flex flex-col lg:flex-row text-end lg:mb-0 mb-8 mt-4">
+                            <a href=""
+                                class="hover:text-orange-500 text-medium font-semibold mb-8 lg:mb-0  lg:mr-7  ">Home</a>
+                            <a href=""
+                                class="hover:text-orange-500  text-medium font-semibold mb-8 lg:mb-0  lg:mr-7 ">Instrumentos</a>
+                            <a href=""
+                                class=" hover:text-orange-500  text-medium font-semibold mb-8 lg:mb-0  lg:mr-7 ">Sobre
+                                nosotros</a>
+                            <a href="" class="hover:text-orange-500  text-medium font-semibold   ">Contacto</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+        <!-- ANA -->
+        <div class="flex flex-col items-center px-20 min-h-[800px] relative mb-20">
+            <div class="py-20 lg:max-w-[600px] absolute top-[-50px] z-20">
+                <img src="../public/assets/img/proximamente.png" alt="Proximamente" />
+            </div>
+            <div class="absolute z-10 mt-48 lg-mt-42 ">
+                <img id="saxophone-image" class="w-[600px]" src="../public/assets/img/saxophone-with-background.svg" alt="Saxophone" />
+                <p id="main-content"></p>
+            </div>
         </div>
-        <div class="pb-40">
-            <img id="saxophone-image" src="../public/assets/img/saxophone-with-background.png" alt="Saxophone" />
-            <p id="main-content"></p>
-        </div>
-    </div>
-    <script src="../src/js/app.js"></script>
+        
+        <footer class="bg-gray-900 text-white py-4 mt-auto relative  ">
+            <div class="h-full flex justify-center mx-auto p-6">
+                <img src="../public/assets/img/logo i-nstrumnts-mono.png" class="w-24 h-12 ">
+            </div>
+            <div class="container mx-auto text-center">
+                <p class="text-sm ">
+                    ©Copyright 2024 | All Rights Reserved | i-nstrumnts
+                </p>
+            </div>
+        </footer>
+        <script src="../src/js/app.js"></script>
+    </body>
+
 </body>
 
 </html>
