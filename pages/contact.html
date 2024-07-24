@@ -43,28 +43,29 @@
     </div>
     <div class="flex w-full justify-between relative items-center flex-col">
       <div class="text-white absolute left-40">
-        <form action="" class="">
+        <form action="" id="form" class="">
           <div class="my-8">
             <label for="fname" class="hidden ">Nombre</label>
-            <p class="text-xl mb-1">Nombre</p>
-            <input type="text" class="min-w-[836px] h-10 rounded" />
+            <p class="text-xl mb-1">Nombre y Apellido</p>
+            <input type="text" id="name" class="min-w-[836px] h-10 rounded focus:text-[#0a0908]" />
           </div>
           <div class="my-8">
             <label for="fmail" class="hidden">E-mail</label>
             <p class="text-xl mb-1">E-mail</p>
-            <input type="text" class="min-w-[836px] h-10 rounded" />
+            <input type="text" id="e-mail" class="min-w-[836px] h-10 rounded focus:text-[#0a0908]" />
           </div>
           <div class="my-8">
             <label for="fphone" class="hidden">Telefono</label>
             <p class="text-xl mb-1">Telefono</p>
-            <input type="text" class="min-w-[836px] h-10 rounded" />
+            <input type="text" id="phone" class="min-w-[836px] h-10 rounded focus:text-[#0a0908]" />
           </div>
           <div class="my-8">
             <label for="fmessage" class="hidden">Mensaje</label>
             <p class="text-xl mb-1">Mensaje</p>
-            <input type="text" class="min-w-[836px] h-[100px] rounded" />
+            <input type="text" id="massege" class="min-w-[836px] h-[100px] rounded focus:text-[#0a0908]" />
           </div>
-          <button class="bg-[#EE711B] min-w-[836px] h-10 rounded text-xl font-bold flex justify-center items-center py-8">ENVIAR</button>
+          <button type="submit" class="bg-[#EE711B] min-w-[836px] h-10 rounded text-xl font-bold flex justify-center items-center py-8">ENVIAR</button>
+          <p id="warnings"></p>
       
       </form>
     </div>
