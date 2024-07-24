@@ -125,4 +125,25 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 });
 
-//END INSTRUMENTS
+//FIN INSTRUMENTO
+
+//INICIO DE CONTACTO
+ const nombre = document.getElementById("name")
+ const email = document.getElementById("e-mail")
+ const telefono = document.getElementById("phone")
+ const mensaje = document.getElementById("massege")
+ const form = document.getElementById("form")
+ const parrafo = document.getElementById("warnings")
+
+ form.addEventListener("submir", e=>{
+    let warnings = ""
+    let regexEmail = /^\w+([\.-]?\w+)@\w+([\.-]P\w+)(\.\w{2,3})+$/
+    e.preventDefault()
+    if(nombre.value.length <6){
+       warnings += 'El nombre es muy corto <br>'
+    }
+    if(regexEmail.test(email.value))
+ })
+
+// FIN DE CONTACTO
+
