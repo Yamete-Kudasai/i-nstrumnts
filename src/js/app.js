@@ -1,18 +1,3 @@
-
-
-// INICIO NAVBAR
-function openMenu() {
-    let menu = document.getElementById('menu');
-    
-    if(menu.classList.contains('hidden')) {
-    menu.classList.remove('hidden');
-    } 
-    else{
-        menu.classList.add('hidden');
-    }
-}
-
-// FIN NAVBAR
 document.addEventListener('DOMContentLoaded', function() {
     const params = new URLSearchParams(window.location.search);
     const page = params.get('page');
@@ -29,3 +14,18 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('saxophone-image').src = images[page];
     }
 });
+
+
+// INICIO NAVBAR
+function openMenu() {
+    let menu = document.getElementById('menu');
+    
+    if(menu.classList.contains('hidden')) {
+    menu.classList.remove('hidden');
+    } 
+    else{
+        menu.classList.add('hidden');
+    }
+}
+
+// FIN NAVBAR
