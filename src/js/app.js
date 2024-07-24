@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 
 // INICIO NAVBAR
@@ -14,7 +13,6 @@ function openMenu() {
 }
 
 // FIN NAVBAR
-=======
 document.addEventListener('DOMContentLoaded', function() {
     const params = new URLSearchParams(window.location.search);
     const page = params.get('page');
@@ -31,4 +29,3 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('saxophone-image').src = images[page];
     }
 });
->>>>>>> 801bc1d2ca2d11ef0223ca4269ec19c9d832497c
