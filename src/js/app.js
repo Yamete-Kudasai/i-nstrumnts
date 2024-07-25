@@ -49,6 +49,28 @@ function openMenu() {
     }
 }
 
+
+transform: translateY(-10%);
+    // Obtener el botón
+    const backToTopButton = document.getElementById('backToTop');
+
+    // Mostrar/ocultar el botón en función del desplazamiento de la página
+    window.onscroll = function () {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            backToTopButton.classList.remove('hidden');
+            backToTopButton.classList.add('flex');
+        } else {
+            backToTopButton.classList.add('hidden');
+            backToTopButton.classList.remove('flex');
+        }
+    };
+
+    // Desplazarse hacia arriba cuando se hace clic en el botón
+    backToTopButton.onclick = function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+
 // END NAVBAR
 // STAR INSTRUMENTS
 
@@ -128,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //FIN INSTRUMENTO
 
 //INICIO DE CONTACTO
- const nombre = document.getElementById("name")
+/* const nombre = document.getElementById("name")
  const email = document.getElementById("e-mail")
  const telefono = document.getElementById("phone")
  const mensaje = document.getElementById("massege")
@@ -143,10 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
        warnings += 'El nombre es muy corto <br>'
     }
     if(regexEmail.test(email.value))
-    {
-        
-    }
- })
+ })*/
 
 // FIN DE CONTACTO
 
