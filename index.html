@@ -67,19 +67,22 @@
     <section class="home flex-col w-full justify-center items-center">
         <div class="bg-[url('public/assets/img/banner-home.jpg')] flex w-full h-screen bg-cover bg-center ">
         </div>
-
-        <div class="flex items-center flex-col justify-center w-full">
-            <div class=" flex-col justify-center items-center w-4/5 mt-32 border-b-4 border-[#22213B]">
-                <div class="bg-[#22213B] flex-col pt-1 text-end relative w-1/2 py-16">
-                    <h2 class="absolute top-1 right-2 text-5xl mb-2 text-white font-montserrat mt-6  items-end  ">QUÉ
+          <!-- flex items-center flex-col justify-center w-full contenedor texto-->
+        <div class="flex items-center flex-col justify-center w-full"> 
+            <!--"flex-col justify-center items-center mt-32 lg:w-4/5 w-full  lg:border-b-4 border-[#22213B] sm:mb-32 " -->
+            <div class="flex-col justify-center mt-32 lg:w-4/5 w-full  lg:border-b-4 border-b-2  border-[#22213B] sm:mb-30">
+                <!--bg-[#22213B] flex-col pt-1 text-end relative lg:w-1/2 w-[70%] lg:py-16 lg:pt-0 py-10 -->
+                <div class="bg-[#22213B] flex-col pt-1 text-end relative lg:w-1/2 w-[70%] lg:py-16 lg:pt-0 py-10"> 
+                    <h2 class= "absolute lg:top-1 -top-2 right-2 lg:text-5xl text-3xl  text-white font-montserrat mt-6 items-end ">QUÉ
                         SOMOS
                     </h2>
+                     <!--"absolute lg:top-1 -top-2 right-2 lg:text-5xl text-3xl  text-white font-montserrat mt-6  items-end" -->
                 </div>
 
             </div>
 
             <div class=" flex-col justify-center w-4/5 mt-8">
-                <p class=" lg:text-3xl text-2xl mt-4 mb-2"> En nuestra plataforma, llevamos la magia de la música a tus manos. Aquí,
+                <p class="lg:text-3xl text-2xl mt-4 mb-2"> En nuestra plataforma, llevamos la magia de la música a tus manos. Aquí,
                     puedes explorar una amplia
                     variedad de instrumentos virtuales y sumergirte en el aprendizaje musical desde la comodidad de tu
                     hogar. Ya seas un principiante curioso o un músico experimentado, ofrecemos recursos interactivos y
@@ -152,28 +155,33 @@
     <section class="aboutUs w-full flex flex-col justify-center items-center ">
 
         <div class="flex items-center flex-col justify-center w-full mt-32">
-            <div class=" flex-col justify-center items-center w-4/5 mt-32 border-b-4 border-[#22213B] mb-30">
-                <div class="bg-[#22213B] flex-col pt-1 text-end relative w-1/2 py-16">
-                    <h2 class="absolute top-1 right-2 text-5xl mb-2 text-white font-montserrat mt-6  items-end  "> SOBRE NOSOTROS
+            <!-- flex-col justify-center items-center mt-32 lg:w-4/5 w-full  lg:border-b-4 border-[#22213B] sm:mb-32 " -->
+            <div class="flex-col justify-center mt-32 lg:w-4/5 w-full  lg:border-b-4  border-b-2 border-[#22213B] sm:mb-30 ">
+                <div class="bg-[#22213B] flex-col pt-1 text-end relative lg:w-1/2 w-[70%] lg:py-16 lg:pt-0 py-10">
+                    <h2 class="absolute lg:top-1 -top-2 right-2 lg:text-5xl text-3xl  text-white font-montserrat mt-6  items-end "> SOBRE NOSOTROS
                     </h2>
                 </div>
 
             </div>
 
             <div class=" flex-col justify-center w-4/5 mt-8">
-                <p class="text-3xl mt-2 mb-2"> Cras venenatis consequat mattis. Pellentesque ut nunc eget arcu tristique condimentum vel quis lectus. 
+                <p class="lg:text-3xl text-2xl mt-4 mb-2"> Cras venenatis consequat mattis. Pellentesque ut nunc eget arcu tristique condimentum vel quis lectus. 
                     Pellentesque eu eleifend quam. Vivamus eu justo diam. Sed maximus lectus ante. Fusce porta pharetra ipsum, sed hendrerit nibh varius quis. 
                     Integer non pretium est, eu efficitur erat.
                 </p>
             </div>
         </div>
 
-        <div class="grid grid-cols-5 gap-2 justify-items-center mx-8 w-4/5 2xl mt-32 mb-32">
+        <!-- class="grid lg:grid-cols-4 grid-cols-2  lg:w-4/5 w-full lg:mt-32 mt-0 gap-6" -->
+        <div class="grid lg:grid-cols-5 gap-4 justify-items-center mx-8-2xl  lg:w-4/5  mt-32 mb-32">
             
             <div class="flex-col items-center justify-center">
                 <div> 
-                <h3 class="flex justify-center items-center text-2xl">Cargo</h3>
-                <p class="flex justify-center items-center text-2xl mb-4">nombre</p>
+                    
+                    <!-- h2 class="absolute lg:top-1 -top-2 right-2 lg:text-5xl text-3xl  text-white font-montserrat mt-6  items-end " -->
+                    <!-- p: lg:text-3xl text-2xl mt-4 mb-2 -->
+                <h3 class="flex justify-center items-center lg:text-2xl">Cargo</h3>
+                <p class="flex justify-center items-center lg:text-2xl mb-4">nombre</p>
                 </div>
                 <img src="public/assets/img/fotoSara.png" alt="SARA" class="objeto-contain lg:w-96 w-40" >
             </div>
@@ -182,32 +190,32 @@
             <div class="flex-col items-center justify-center">
                 
                 <div> 
-                <h3 class=" flex justify-center items-center text-2xl">Cargo</h3>
-                <p class="flex justify-center items-center text-2xl mb-4">nombre</p>
+                <h3 class=" flex justify-center items-center lg:text-2xl">Cargo</h3>
+                <p class="flex justify-center items-center lg:text-2xl mb-4">nombre</p>
                 </div>
                 <img src="public/assets/img/fotoSara.png" alt="ANA" class="objeto-contain lg:w-96 w-40">
             </div>
             
             <div class="flex-col items-center justify-center">
                 <div> 
-                    <h3 class="flex justify-center items-center text-2xl">Cargo</h3>
-                    <p class="flex justify-center items-center text-2xl mb-4">nombre</p>
+                    <h3 class="flex justify-center items-center lg:text-2xl">Cargo</h3>
+                    <p class="flex justify-center items-center lg:text-2xl mb-4">nombre</p>
                     </div>
                 <img src="public/assets/img/fotoSara.png" alt="JENNY" class=" objeto-contain lg:w-96 w-40">
             </div>
             
             <div class="flex-col items-center justify-center" >
                 <div> 
-                <h3 class="flex justify-center items-center text-2xl">Scrum</h3>
-                <p class="flex justify-center items-center text-2xl mb-4">nombre</p>
+                <h3 class="flex justify-center items-center lg:text-2xl">Scrum Master</h3>
+                <p class="flex justify-center items-center lg:text-2xl mb-4">nombre</p>
                 </div>
                 <img src="public/assets/img/fotoSara.png" alt="JHON" class="objeto-contain lg:w-96 w-40">
             </div>
             
             <div class="flex-col items-citems-center justify-center" >
                 <div> 
-                    <h3 class="flex justify-center items-center text-2xl"text-2xl>Cargo</h3>
-                    <p class="flex justify-center items-center text-2xl mb-4">nombre</p>
+                    <h3 class="flex justify-center items-center lg:text-2xl">Cargo</h3>
+                    <p class="flex justify-center items-center lg:text-2xl mb-4">nombre</p>
                     </div>
                 <img src="public/assets/img/fotoSara.png" alt="ENMANUEL" class="lg:w-96 w-40" >
             </div>

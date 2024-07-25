@@ -143,6 +143,9 @@ document.addEventListener('DOMContentLoaded', () => {
        warnings += 'El nombre es muy corto <br>'
     }
     if(regexEmail.test(email.value))
+    {
+        
+    }
  })
 
 // FIN DE CONTACTO
