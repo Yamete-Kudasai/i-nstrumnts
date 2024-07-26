@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 let  keypress = e.key.toLowerCase();
                 keypressed.add(keypress)
 
-                e.preventDefault();
+               
                 
                 let colorBorder = document.querySelector('.drum-part')
 
