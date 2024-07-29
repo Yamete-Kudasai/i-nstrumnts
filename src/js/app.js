@@ -50,7 +50,7 @@ function openMenu() {
 }
 
 
-transform: translateY(-10%);
+  
     // Obtener el botón
     const backToTopButton = document.getElementById('backToTop');
 
