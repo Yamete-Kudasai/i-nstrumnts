@@ -75,26 +75,53 @@ function openMenu() {
 // STAR INSTRUMENTS
 
 
-
 //FIN INSTRUMENTO
 
 //INICIO DE CONTACTO
-/* const nombre = document.getElementById("name")
- const email = document.getElementById("e-mail")
- const telefono = document.getElementById("phone")
- const mensaje = document.getElementById("massege")
- const form = document.getElementById("form")
- const parrafo = document.getElementById("warnings")
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById('form');
+    const nombre = document.getElementById('name');
+    const email = document.getElementById('e-mail');
+    const phone = document.getElementById('phone');
+    const massege = document.getElementById('massege');
+    const warnings = document.getElementById('warnings');
 
- form.addEventListener("submir", e=>{
-    let warnings = ""
-    let regexEmail = /^\w+([\.-]?\w+)@\w+([\.-]P\w+)(\.\w{2,3})+$/
-    e.preventDefault()
-    if(nombre.value.length <6){
-       warnings += 'El nombre es muy corto <br>'
-    }
-    if(regexEmail.test(email.value))
- })*/
+    form.addEventListener("submit", e => {
+        e.preventDefault();
+        warnings.innerHTML = '';
+        let warningMessages = '';
+
+        // Validar Nombre
+        if (nombre.value.length < 6) {
+            warningMessages += 'El nombre es muy corto.<br>';
+        }
+
+        // Validar Email
+        const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if (!regexEmail.test(email.value)) {
+            warningMessages += 'El email no es válido.<br>';
+        }
+
+        // Validar Teléfono (opcional)
+        if (phone.value.length < 7) {
+            warningMessages += 'El teléfono es muy corto.<br>';
+        }
+
+        // Validar Mensaje (opcional)
+        if (massege.value.length < 10) {
+            warningMessages += 'El mensaje es muy corto.<br>';
+        }
+
+        // Mostrar advertencias o enviar formulario
+        if (warningMessages) {
+            warnings.innerHTML = warningMessages;
+        } else {
+            warnings.innerHTML = "Formulario enviado correctamente!";
+            form.submit();
+        }
+    });
+});
+
 
 // FIN DE CONTACTO
 
