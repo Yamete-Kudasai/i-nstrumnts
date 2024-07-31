@@ -57,23 +57,29 @@
         <form action="" id="form" class="">
           <div class="my-8">
             <label for="fnombre" class="hidden ">Nombre</label>
-            <p class="text-xl mb-1">Nombre y Apellido</p>
-            <input type="text" id="name"  class="lg:min-w-[700px] min-w-[230px] h-10 rounded focus:text-[#0a0908]  text-[#0a0908]" placeholder="Escribe Nombre y Apellido Aqui" />
+            <p class="text-xl mb-1">Nombre</p>
+            <input type="text" id="userName"  class="lg:min-w-[700px] min-w-[230px] h-10 rounded   text-[#0a0908]" placeholder="  Nombre y Apellido "  />
+            <p class="text-red-500 text-sm mt-1 hidden" id="userNameError">*Este campo es obligatorio (no se permiten numeros ni simbolos)*</p>
+           
           </div>
           <div class="my-8">
             <label for="femail" class="hidden">E-mail</label>
             <p class="text-xl mb-1">E-mail</p>
-            <input type="text" id="e-mail"  class="lg:min-w-[700px] min-w-[230px] h-10 rounded focus:text-[#0a0908] text-[ #0a0908]" placeholder="Escribe tu E-mail Aqui" />
+            <input type="email" id="email"  class="lg:min-w-[700px] min-w-[230px] h-10 rounded  text-[#0a0908]" placeholder="  E-mail " />
+            <p class="text-red-500 text-sm mt-1 hidden" id="emailError">*Rellene el campo correctamente*</p>
           </div>
           <div class="my-8">
             <label for="fphone" class="hidden">Telefono</label>
             <p class="text-xl mb-1">Teléfono</p>
-            <input type="text" id="phone"  class="lg:min-w-[700px] min-w-[230px] h-10 rounded focus:text-[#0a0908]  text-[#0a0908]" placeholder="Escribe tu numero de Teléfono" />
+            <input type="number" id="phone"  class="lg:min-w-[700px] min-w-[230px] h-10 rounded   text-[#0a0908]" placeholder="  Numero de Teléfono" />
+            <p class="text-red-500 text-sm mt-1 hidden" id="phoneError">*Porfavor, indique su numero de Teléfono*</p>
+            
           </div>
           <div class="my-8">
             <label for="fmessage" class="hidden">Mensaje</label>
             <p class="text-xl mb-1">Mensaje</p>
-            <textarea  id="massege"  class="lg:min-w-[700px] min-w-[230px] h-[100px] rounded focus:text-[#0a0908]  text-[#0a0908]" placeholder="Escribe tu mensaje" ></textarea>
+            <textarea  id="massege"  class="lg:min-w-[700px] min-w-[230px] h-[100px] h-10 rounded  text-[#0a0908]" placeholder="  Escribe tu mensaje" ></textarea>
+            <p class="text-red-500 text-sm mt-1 hidden" id="massegeError">*Esto no puede estar vacío*</p>
           </div>
           <button type="submit" class="bg-[#EE711B] lg:min-w-[700px] min-w-[200px] h-10 rounded lg:text-xl  font-bold flex justify-center items-center lg:py-8">ENVIAR</button>
         </form>
