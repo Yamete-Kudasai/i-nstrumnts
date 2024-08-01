@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         audio.play();
     }
     
-    document.addEventListener('keyup', (event) => {
+    document.addEventListener('keydown', (event) => {
         var key = event.key.toLowerCase();
         var drum = document.querySelector(`.drum-part[data-key="${key}"]`);
         if (drum) {
